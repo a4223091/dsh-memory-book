@@ -1,0 +1,3 @@
+- insert:
+    - id: memory-book
+      name: '@local/dsh-memory-book'

@@ -1,0 +1,32 @@
+{
+  "name": "@local/dsh-memory-book",
+  "version": "0.12.2",
+  "private": true,
+  "type": "module",
+  "description": "Memory Book: local core/wiki/raw memory pages — a `memory` tool, per-turn injection of core memory and the wiki directory index, and a sidebar panel to browse and edit pages.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

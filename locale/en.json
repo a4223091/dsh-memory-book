@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Memory",
+    "description": "Local long-term memory: core memory text and the wiki directory index are injected every turn; pages are read and written through the memory tool. Files stay local."
+  }
+}
