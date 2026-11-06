@@ -1,9 +1,9 @@
 {
   "name": "@local/dsh-memory-book",
-  "version": "0.12.2",
+  "version": "0.13.0",
   "private": true,
   "type": "module",
-  "description": "Memory Book: local core/wiki/raw memory pages — a `memory` tool, per-turn injection of core memory and the wiki directory index, and a sidebar panel to browse and edit pages.",
+  "description": "Memory Book: per-project local memory (global + primary + transient), fixed project documents with versioning, engine-enforced maintenance, a `memory` tool, per-turn injection, and a sidebar panel to browse and edit pages.",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
