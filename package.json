@@ -3,7 +3,22 @@
   "version": "0.13.0",
   "private": true,
   "type": "module",
+  "license": "MIT",
   "description": "Memory Book: per-project local memory (global + primary + transient), fixed project documents with versioning, engine-enforced maintenance, a `memory` tool, per-turn injection, and a sidebar panel to browse and edit pages.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "local-first",
+    "agent-memory"
+  ],
+  "scripts": {
+    "test": "node test/test-host.mjs . && node test/test-routes.mjs . && node test/test-client.mjs . && node test/test-render.mjs .",
+    "test:host": "node test/test-host.mjs .",
+    "test:routes": "node test/test-routes.mjs .",
+    "test:client": "node test/test-client.mjs .",
+    "test:render": "node test/test-render.mjs ."
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
