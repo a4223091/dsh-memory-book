@@ -29,7 +29,19 @@ memory-book 的做法：
 
 ![项目文档页](docs/screenshots/project-docs.png)
 
-配置页：10 项注入预算与维护节奏（含自动补更开关）
+主项目核心记忆：每个工作区自己的规则与知识（图中红字是给使用者的提示）
+
+![主项目核心记忆](docs/screenshots/project-core.png)
+
+全局记忆库的核心记忆：跨项目的规则、画像与经验（任何会话都注入）
+
+![全局核心记忆](docs/screenshots/global-core.png)
+
+知识库：按分类浏览项目页面，卡片显示更新时间与摘要
+
+![知识库](docs/screenshots/knowledge-base.png)
+
+配置页：10 项注入预算与维护节奏，自动补更可开关（红字标注的是关键能力）
 
 ![配置页](docs/screenshots/settings.png)
 
