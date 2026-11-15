@@ -14,7 +14,7 @@
  * 代码注释为中文；英文文案只用于非中文界面。
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-memory-book',
+  id: 'dsh-memory-book',
   factory(require) {
     const React = require('react')
     const h = React.createElement

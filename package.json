@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-memory-book",
+  "name": "dsh-memory-book",
   "version": "0.13.0",
-  "private": true,
   "type": "module",
   "license": "MIT",
   "description": "Memory Book: per-project local memory (global + primary + transient), fixed project documents with versioning, engine-enforced maintenance, a `memory` tool, per-turn injection, and a sidebar panel to browse and edit pages.",
@@ -12,6 +11,14 @@
     "local-first",
     "agent-memory"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a4223091/dsh-memory-book.git"
+  },
+  "homepage": "https://github.com/a4223091/dsh-memory-book",
+  "bugs": {
+    "url": "https://github.com/a4223091/dsh-memory-book/issues"
+  },
   "scripts": {
     "test": "node test/test-host.mjs . && node test/test-routes.mjs . && node test/test-client.mjs . && node test/test-render.mjs .",
     "test:host": "node test/test-host.mjs .",

@@ -22,7 +22,7 @@
 1. 改 `index.js`（Host：项目解析、三层注入、固定文档引擎、强制维护、工具、HTTP 接口）或 `client.js`（面板）。
 2. 改 `package.json` 的 `version`，并在 `CHANGELOG.md` 记一条。
 3. 重装（本地 bundle 是 link，必须卸载再装才会重新加载 Host 代码）：
-   `plugin_manager remove_bundle(target=@local/dsh-memory-book)` → `plugin_manager install_bundle(target=<本仓库绝对路径>)`
+   `plugin_manager remove_bundle(target=dsh-memory-book)` → `plugin_manager install_bundle(target=<本仓库绝对路径>)`
 4. 跑测试：`npm test`，必须 0 失败。
 5. 验证运行时：`GET /memory-book/library` 返回 **401**（路由在、鉴权在；404 = 没加载）。
 6. 客户端改动：刷新页面后肉眼确认面板。

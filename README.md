@@ -79,7 +79,13 @@ memory-book 的做法：
 
 ## 安装
 
-插件以 DSH bundle（插件包）形式安装到当前 profile：
+已发布到 npm：`dsh-memory-book`。在 DSH 插件市场（Discover）里搜索 `memory-book` 安装，或直接：
+
+```text
+plugin_manager install_bundle  target=dsh-memory-book@0.13.0
+```
+
+也可以按本地 bundle 方式安装本仓库：
 
 ```text
 plugin_manager install_bundle  target=<本仓库目录的绝对路径>
@@ -88,11 +94,9 @@ plugin_manager install_bundle  target=<本仓库目录的绝对路径>
 本地开发时 profile 里是 `link:` 链接，改完代码需要卸载再安装才会重新加载 Host 半边：
 
 ```text
-plugin_manager remove_bundle  target=@local/dsh-memory-book
+plugin_manager remove_bundle  target=dsh-memory-book
 plugin_manager install_bundle target=<本仓库目录的绝对路径>
 ```
-
-> 包名目前是 `@local/dsh-memory-book`（本地开发用的占位名）。要发布到 npm 或市场，请把 `package.json` 的 `name` 改成你自己的作用域，并同步 `cordis.patch.yml`。
 
 ## memory 工具
 

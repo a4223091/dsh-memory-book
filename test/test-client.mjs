@@ -250,7 +250,7 @@ globalThis.fetch = async (url) => {
 await import(pathToFileURL(path.join(pluginDir, 'client.js')).href)
 
 check('调用 __ModuleLoader__.load', loaded !== undefined)
-check('模块 id 与包名一致', loaded?.id === '@local/dsh-memory-book', String(loaded?.id))
+check('模块 id 与包名一致', loaded?.id === 'dsh-memory-book', String(loaded?.id))
 check('factory 是函数', typeof loaded?.factory === 'function')
 
 const exportsObject = loaded.factory((name) => {
